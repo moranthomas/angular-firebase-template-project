@@ -1,0 +1,48 @@
+[debug] [2018-02-27T10:39:01.914Z] ----------------------------------------------------------------------
+[debug] [2018-02-27T10:39:01.914Z] Command:       C:\Development\NodeJS\node.exe C:\Development\NodeJS\node_modules\firebase-tools\bin\firebase serve
+[debug] [2018-02-27T10:39:01.914Z] CLI Version:   3.17.4
+[debug] [2018-02-27T10:39:01.914Z] Platform:      win32
+[debug] [2018-02-27T10:39:01.914Z] Node Version:  v6.11.4
+[debug] [2018-02-27T10:39:01.914Z] Time:          Tue Feb 27 2018 10:39:01 GMT+0000 (GMT Standard Time)
+[debug] [2018-02-27T10:39:01.914Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-02-27T10:39:01.945Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-02-27T10:39:01.945Z] > authorizing via signed-in user
+[debug] [2018-02-27T10:39:01.945Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2018-02-27T10:39:01.945Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ { refresh_token: '1/mfAPI5ZFgU2lJLyiLq1UHT3UcPq7DhMbIaApFSOipwLmZt_VK_1cImliEWXhz54_',
+  client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
+  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
+  grant_type: 'refresh_token',
+  scope: 'email https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase openid' } 
+ Tue Feb 27 2018 10:39:01 GMT+0000 (GMT Standard Time)
+[debug] [2018-02-27T10:39:02.180Z] <<< HTTP RESPONSE 200
+[debug] [2018-02-27T10:39:02.190Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/optimizme-7baa2  
+  
+ Tue Feb 27 2018 10:39:02 GMT+0000 (GMT Standard Time)
+[debug] [2018-02-27T10:39:03.355Z] <<< HTTP RESPONSE 200
+[debug] [2018-02-27T10:39:03.359Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/optimizme-7baa2/tokens  
+  
+ Tue Feb 27 2018 10:39:03 GMT+0000 (GMT Standard Time)
+[debug] [2018-02-27T10:39:04.255Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from 'C:\Development\github-projects\angular-fire-optimize'...
+[info] 
+[debug] [2018-02-27T10:39:04.273Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/optimizme-7baa2  
+  
+ Tue Feb 27 2018 10:39:04 GMT+0000 (GMT Standard Time)
+[debug] [2018-02-27T10:39:05.088Z] <<< HTTP RESPONSE 200
+[debug] [2018-02-27T10:39:05.089Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/175878598865/clients/_:getWebAppConfig  
+  
+ Tue Feb 27 2018 10:39:05 GMT+0000 (GMT Standard Time)
+[debug] [2018-02-27T10:39:05.587Z] <<< HTTP RESPONSE 200
+[debug] [2018-02-27T10:39:05.693Z] TypeError: Cannot read property 'public' of undefined
+    at Server.<anonymous> (C:\Development\NodeJS\node_modules\firebase-tools\lib\serve\hosting.js:34:17)
+    at Server.g (events.js:292:16)
+    at emitNone (events.js:86:13)
+    at Server.emit (events.js:185:7)
+    at emitListeningNT (net.js:1288:10)
+    at _combinedTickCallback (internal/process/next_tick.js:77:11)
+    at process._tickDomainCallback (internal/process/next_tick.js:128:9)
+[error] 
+[error] Error: An unexpected error has occurred.

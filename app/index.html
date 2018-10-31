@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+<html lang="en" ng-app="myApp" class="no-js">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>My AngularJS App</title>
+    <base href="/app/">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="bower_components/html5-boilerplate/css/normalize.css">
+    <link rel="stylesheet" href="bower_components/html5-boilerplate/css/main.css">
+    <link rel="stylesheet" href="app.css">
+    <script src="bower_components/html5-boilerplate/js/vendor/modernizr-2.6.2.min.js"></script>
+
+
+    <!-- Firebase -->
+    <!-- <script src="https://www.gstatic.com/firebasejs/3.6.6/firebase.js"></script> -->
+    <script src="https://www.gstatic.com/firebasejs/4.5.0/firebase.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyAGAqdV69_4vaFnNFGLnbFLnn_imE8uHBY",
+            authDomain: "fir-database-quickstart-100fb.firebaseapp.com",
+            databaseURL: "https://fir-database-quickstart-100fb.firebaseio.com",
+            projectId: "fir-database-quickstart-100fb",
+            storageBucket: "fir-database-quickstart-100fb.appspot.com",
+            messagingSenderId: "334076859078"
+        };
+        firebase.initializeApp(config);
+
+    </script>
+
+
+</head>
+
+<body>
+    <div ng-view></div>
+
+    <!-- JQuery -->
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>  
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>    -->
+    <script src="https://code.jquery.com/jquery-2.0.1.min.js"></script>
+
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script> -->
+
+    <!-- Angular -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+
+    <!-- AngularFire -->
+    <script src="https://cdn.firebase.com/libs/angularfire/2.3.0/angularfire.min.js"></script>
+
+    <script src="https://cdn.firebase.com/js/simple-login/1.6.2/firebase-simple-login.js"></script>
+
+
+    <script src="app.js"></script>
+    <script src="home/home.js"></script>
+    <script src="register/register.js"></script>
+    <script src="welcome/welcome.js"></script>
+    <script src="addPost/addPost.js"></script>
+    <script src="components/version/version.js"></script>
+    <script src="components/version/version-directive.js"></script>
+    <script src="components/version/interpolate-filter.js"></script>
+</body>
+
+</html>
